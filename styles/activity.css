@@ -1,0 +1,143 @@
+.activity {
+  text-align: center;
+  margin-top: 2rem;
+  width: 75%;
+  margin: auto;
+}
+
+.activity-heading,
+.team-heading,
+.bmi-heading,
+.pricing-heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.activity-text,
+.team-text,
+.bmi-text {
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-color);
+  width: 50%;
+  margin: auto;
+  max-width: 600px;
+}
+
+.activity-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3.75rem;
+}
+.activity-content {
+  flex-basis: 20%;
+}
+.activity-image img {
+  border-radius: 100%;
+  margin: 1.875rem 0;
+}
+
+.activity-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.activity-content p {
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.run-card {
+  width: 75%;
+  display: flex;
+  margin: 6.25rem auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(34, 34, 34);
+  border-radius: 1.25rem;
+}
+
+.run-content {
+  padding: 3.375rem;
+  flex-basis: 50%;
+}
+
+.run-content h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.run-content p {
+  margin: 1rem 0 2rem;
+  color: var(--text-color);
+}
+.run-content button {
+  outline: none;
+  border: none;
+  background-color: inherit;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1rem 4rem;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: var(--orange-color);
+}
+
+.run-image {
+  flex-basis: 35%;
+
+  padding: 2rem;
+}
+
+.run-image img {
+  width: 100%;
+  min-width: 350px;
+}
+
+/* responsive */
+@media (max-width: 1440px) {
+  .activity {
+    width: 90%;
+  }
+  .run-card {
+    width: 90%;
+  }
+  .hero-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .activity-heading,
+  .team-heading,
+  .bmi-heading,
+  .pricing-heading {
+    font-size: 2rem;
+  }
+  .activity-text,
+  .team-text,
+  .bmi-text {
+    width: 80%;
+    max-width: 600px;
+  }
+  .activity-container{
+    flex-direction: column;
+  }
+  .activity-image img{
+    width: 100%;
+  }
+  .activity-content{
+    margin-bottom: 2rem;
+  }
+  .run-card{
+    flex-direction: column;
+  }
+  .run-image img{
+    min-width: 0px;
+  }
+  .run-content button{
+    width: 100%;
+  }
+}

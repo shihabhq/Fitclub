@@ -1,0 +1,118 @@
+.bmi-container {
+  margin: 5.625rem 0;
+  background: rgb(34, 34, 34);
+  padding: 3.125rem 0;
+}
+
+.bmi-contents {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.bmi-contents h1 {
+  font-size: 1.75rem;
+  font-weight: 900;
+}
+
+.bmi-contents p {
+  font-size: 14px;
+  color: var(--text-color);
+  margin: 1rem 0 2rem;
+  width: 60%;
+}
+.bmi-chart {
+  flex: 2;
+}
+
+.bmi-chart table {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+  margin-top: 3rem;
+  border-spacing: 0;
+}
+.bmi-chart th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+  padding: 0.8rem 1rem;
+}
+
+.bmi-form {
+  flex: 3;
+ 
+}
+
+.bmi-form form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 2rem 0;
+}
+
+.bmi-form input,
+.bmi-form select {
+  width: 45%;
+  outline: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: white;
+}
+.bmi-form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.bmi-form .full {
+  width: calc(90% + 0.75rem);
+}
+.bmi-form select{
+    color: rgba(255, 255, 255, 0.6);
+}
+.bmi-form select option {
+    border: none;
+    outline: none;
+  background-color: black; /* Background color of options */
+  color:white; /* Text color */
+  padding: 10px; /* Padding inside options (may not work in all browsers) */
+  font-size: 16px; /* Font size */
+}
+
+.bmi-form input[type=button]{
+    background-color: brown;
+}
+.bmi-form button{
+    background-color: var(--orange-color);
+    border: none;
+    outline: none;
+    padding: 1rem 4rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+/* responsive */
+
+@media  (max-width:1440px){
+  .bmi-contents{
+    width: 90%;
+  }
+}
+@media  (max-width:576px){
+  .bmi-contents{
+    flex-direction: column;
+    gap:2rem;
+  }
+  .bmi-contents h1{
+    font-size: 1.25rem;
+  }
+  
+}
